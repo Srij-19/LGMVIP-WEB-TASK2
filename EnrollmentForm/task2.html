@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="task2.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="form-heading col-12">Student Enrollment Form</h1>
+        <div class="row">
+            <form id="myForm" class="col-12 col-md-6">
+                <div id="name-details" class="mb-3">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" />
+                    <p id="nameErrMsg" class="error-message"></p>
+                </div>
+                <div id="email-details" class="mb-3">
+                    <label for="email">Email</label>
+                    <input type="text" class="form-control" id="email" />
+                    <p id="emailErrMsg" class="error-message"></p>
+                </div>
+
+                <div class="mb-3 d-flex flex-row">
+                    <div id="gender-details" class="mr-5">
+                        <h1 class="gender-field-heading">Gender</h1>
+                        <input type="radio" name="gender" id="genderMale" value="Male" checked />
+                        <label for="genderMale">Male</label>
+                        <input type="radio" name="gender" id="genderFemale" value="Female" class="ml-2" />
+                        <label for="genderFemale">Female</label>
+                    </div>
+                    <div id="age-details">
+                        <h1 class="gender-field-heading">AGE</h1>
+                        <input type="text" id="age" placeholder="enter age in number" />
+                        <p id="ageErrMsg" class="error-message"></p>
+                    </div>
+                </div>
+
+                <div id="education-details" class="mb-3">
+                    <label for="qualification">Qualification</label>
+                    <input type="text" class="form-control" id="qualification" />
+                    <p id="qualificationErrMsg" class="error-message"></p>
+                </div>
+
+                <div id="skills-details" class="mb-3">
+                    <label for="skills">skills</label>
+                    <input type="text" class="form-control" id="skills" placeholder="enter every skill with ' , ' seperated" />
+                    <p id="skillsErrMsg" class="error-message"></p>
+                </div>
+
+                <div id="website-details" class="mb-3">
+                    <label for="website">Website</label>
+                    <input type="text" class="form-control" id="website" placeholder="Eg: www.dasaripremkumar.com" />
+                    <p id="websiteErrMsg" class="error-message"></p>
+                </div>
+
+                <div id="image-details" class="mb-3">
+                    <label for="imageUrl">Image URL</label>
+                    <input type="text" class="form-control" id="imageUrl" placeholder="*optional" />
+                    <p id="imageUrlErrMsg" class="error-message"></p>
+                </div>
+
+
+                <button class="btn btn-primary mb-3">Submit</button>
+            </form>
+            <div class="col-12 col-md-6 display-container">
+                <h1 class="enrolled-students-text">Enrolled Students</h1>
+                <div id="students-container">
+                    <div class="d-flex flex-row title-container">
+                        <p class="student-card-title">Student Name</p>
+                        <p class="student-card-image">image</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="task2.js" > </script>
+</body>
+</html>
